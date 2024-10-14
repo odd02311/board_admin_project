@@ -48,7 +48,7 @@ class ArticleManagementServiceTest {
             this.sut = sut;
         }
 
-        @DisplayName("게시글 API를 호출하면, 게시글을 가져온다.")
+        @DisplayName("게시글 ID와 함께 게시글 API을 호출하면, 게시글을 가져온다.")
         @Test
         void given_when_then() {
             // Given
