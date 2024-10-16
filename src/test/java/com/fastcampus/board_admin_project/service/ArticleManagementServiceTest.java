@@ -173,6 +173,7 @@ class ArticleManagementServiceTest {
         private UserAccountDto createUserAccountDto() {
             return UserAccountDto.of(
                     "unoTest",
+                    "pw",
                     Set.of(RoleType.ADMIN),
                     "uno-test@email.com",
                     "uno-test",
