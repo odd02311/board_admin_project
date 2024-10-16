@@ -3,6 +3,7 @@ package com.fastcampus.board_admin_project.controller;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.fastcampus.board_admin_project.config.SecurityConfig;
+import com.fastcampus.board_admin_project.config.TestSecurityConfig;
 import com.fastcampus.board_admin_project.domain.constant.RoleType;
 import com.fastcampus.board_admin_project.dto.ArticleCommentDto;
 import com.fastcampus.board_admin_project.dto.UserAccountDto;
@@ -27,7 +28,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @DisplayName("컨트롤러 - 댓글 관리")
-@Import(SecurityConfig.class)
+@Import(TestSecurityConfig.class)
 @WebMvcTest(ArticleCommentManagementController.class)
 class ArticleCommentManagementControllerTest {
 
